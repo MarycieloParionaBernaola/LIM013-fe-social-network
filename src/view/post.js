@@ -7,6 +7,10 @@ import { itemComment } from './comment.js';
 
 export const itemPost = (objPost) => {
   const userId = firebase.auth().currentUser.uid;
+  /* const getDate = date => `${date.toLocaleTimeString([],
+    { hour: '2-digit', minute: '2-digit' })} ${date.toLocaleDateString()} `; */
+  // eslint-disable-next-line max-len
+  /* const date = objPost.timestamp !== null ? getDate(objPost.timestamp.toDate()) : getDate(new Date()); */
   // Counter likes + planes
   const reactionCounter = objPost.likes.length + objPost.planes.length;
   const postElement = document.createElement('div');

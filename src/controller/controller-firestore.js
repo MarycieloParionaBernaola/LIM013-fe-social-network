@@ -39,10 +39,15 @@ export const updateCurrentUser = (userId, Username, Phone, Birthday, Country, De
 };
 // ----------------------------------- CREATE BD POST --------------------------------------
 export const addPost = (UserId, Privacy, Publication, URLimg) => {
+  /* const options = {
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+    hour: 'numeric', hour12: 'false',
+  }; */
   const db = firebase.firestore();
   return db.collection('SN_Post').add({
     userId: UserId,
-    date: new Date().toLocaleString(),
+    date: new Date().toLocaleString('es-ES'),
+    /* timestamp: firebase.firestore.FieldValue.serverTimestamp(), */
     privacy: Privacy,
     publication: Publication,
     urlimg: URLimg,
@@ -67,7 +72,7 @@ export const addComment = (UserId, idPost, Comment) => {
   const db = firebase.firestore();
   return db.collection('SN_Post').doc(idPost).collection('SN_Comment').add({
     userId: UserId,
-    date: new Date().toLocaleString(),
+    timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     comment: Comment,
   });
 };
