@@ -69,11 +69,11 @@ export default (dataCurrentUser) => {
   <aside class="right-section">
     <!-- Events -->
     <div class="events">
-      <p>THE WORLD'S MOST POPULAR DESTINATIONS</p>
+      <p>The World's Most Popular Destinations</p>
       <img class="img-aside" src="img/aside-bali-indonesia.jpg" title = "indonesia" alt="Indonesia">
       <img class="img-aside" src="img/aside-cuzco.jpg" title = "cuzco" alt="Cuzco">
-      <img class="img-aside" src="img/aside-islas-caiman.jpg" title = "islas-caiman" alt="Islas Caiman">
-      <img class="img-aside" src="img/aside-nueva-york.jpg" title = "nueva-york" alt="Nueva York">
+      <img class="img-aside" src="img/aside-islas-caiman.jpg" title = "islas-caiman" alt="Caiman Islands">
+      <img class="img-aside" src="img/aside-nueva-york.jpg" title = "nueva-york" alt="New York">
       <img class="img-aside" src="img/aside-paris.jpg" title = "paris" alt="Paris">
       <p class = "img-aside-text"></p>
       <a href="https://viajes.nationalgeographic.com.es/a/destinos-mas-populares_11415/1" target="_blank"><button>Info</button></a>
@@ -188,7 +188,7 @@ export default (dataCurrentUser) => {
       // Handle progress
         const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
         modalProgress.classList.add('showModal');
-        messageProgress.textContent = 'Your publication was successful';
+        messageProgress.textContent = 'Your post is loading... 🛫';
         uploader.value = progress;
       }, () => {
       // Handle unsuccessful uploads

@@ -13,34 +13,39 @@
   transition: 1s ease-in-out;
   z-index: -1;
   }
-.text-info img{
-  display: none;
-}
 .container-logIn , .container-signUp{
   flex-flow: row wrap;
+  overflow-y: visible;
+  width: 100%;
 }
 .section-register{
-    width: 80%;
+  width: 100%;
 }
 .box-section-register{
-    width: 100%;
+  width: 100%;
+  padding: 0 2rem;
 }
 /*Responsive view  SignUp*/
 .container-signUp:before {
   width: 1500px;
   height: 1500px;
-  transform: translateX(-45%);
-  bottom: 75%;
+  transform: translateX(-50%);
+  left: 30%;
+  bottom: 70%;
   right: initial;
   top: initial;
   transition: 1s ease-in-out;
   z-index: -1;
 }
-.text-infoSingUp{
-  width: 90%;
-  margin-left: 12%;
-  margin-right: 5%;
+.text-infoSingUp, .text-info{
+  width: 100%;
+  height: fit-content;
+  padding: 2rem;
+  line-height: normal;
+  align-items: flex-start;
+  text-align: start;
 }
+
 .text-infoSingUp .text , .text-info .text {
   font-size: 14px;
 }
@@ -59,28 +64,22 @@
     padding: 0;
   }
 header nav ul li {
-    width: 100%;
-    text-align: center;  
-  }
-
-.box:nth-child(2) {
-  order: 1;
-  width: 100%; 
-  font-size: 2rem;
+  width: 100%;
+  text-align: center;  
 }
-
+.box:nth-child(2) {
+  order: 1; 
+  font-size: 2rem;
+  width: fit-content;
+}
 .box:first-child {
   order: 2;
-  
 }
-
 .box:nth-child(3) {
-  order: 3; 
+  order: 3;
 }     
-
 .title-header a {
   padding: 1rem;
-  width: 100%;
 }
           
 #hamburger-menu {
@@ -151,12 +150,10 @@ header nav ul li {
 }
 
 /*Responsive profile*/
-
-.edit-photo {
-  position: absolute;
-  z-index: 1; 
-  bottom: 43%; 
-  left: 57%; 
+.container-user-post,
+.profile-content {
+  width: 100%;
+  margin: 0 auto; 
 }
 /*modal Profile edit*/
 .modal-settings{
@@ -169,19 +166,10 @@ header nav ul li {
   .item6 {
     grid-column-start: 1;
     grid-column-end: 2;
-}
+  }
 }
 /* ------------------media query small device-----------------*/
 @media screen and (max-width:576px){
-  /* *{
-    font-size: 15px;
-  } */
-
-  /* .box:nth-child(2) {
-    order: 1;
-    width: 100%;
-    font-size: 2rem;
-} */
 /* -----------------Responsive home--------------*/
 .container-home{
     grid-template-areas: "profile profile profile"
@@ -197,19 +185,7 @@ header nav ul li {
 .interest, .events, #viewall{
     display: none;
 }
-/*Responsive profile*/
-.container-user-post,
-.profile-content {
-    width: 100%;
-    margin: 0 auto; 
-  }
 /*Responsive modal profile*/
-.edit-photo {
-  position: absolute;
-  z-index: 1; 
-  bottom: 43%; 
-  left: 15rem; 
-}
 .modal-settings{
     width: 80%;
 }

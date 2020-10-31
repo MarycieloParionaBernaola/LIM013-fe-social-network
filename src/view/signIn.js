@@ -9,20 +9,19 @@ export default () => {
   viewSignIn.innerHTML = `
   <section class="text-info">
     <p class="text-infoTitle">What is TravelIn?</p>
-    <p class="text">Travelin is a social network that unites people who share the same passion for travel.</p>
-    <img src="img/imgLogo.png">
+    <p class="text">TravelIn is a social network that unites people who share the same passion for traveling.</p>
   </section>
   <section class="section-register">
     <div class="box-section-register">
       <header>
         <h1 class="title">Travel<i class="fab fa-avianex"></i>n</h1>
-        <p class="text">¡Welcome to travelIn!</p>
+        <p class="text">¡Welcome to TravelIn!</p>
         <p class="text-title">Sign In</p>
       </header>
       <form id="signIn-form"">
         <div class="div-input">
         <i class="fas fa-envelope"></i>
-        <input type="email" id="email" placeholder="E-mail" required />
+        <input type="email" id="email" placeholder="E-mail" required autocomplete="off" spellcheck="false" />
         </div>
         <div class="div-input">
         <i class="fas fa-lock"></i>
@@ -36,7 +35,7 @@ export default () => {
           <img src="img/gmail.png" class="gmail" id="btn-google">
         </div>
         <p class="text">New to TravelIn ?</p>
-        <button class="newAccount">Create an account</button>
+        <button type="button" class="newAccount">Create an account</button>
       </form>
     </div>
   </section>

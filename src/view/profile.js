@@ -12,41 +12,39 @@ export default (dataCurrentUser) => {
   viewProfile.classList.add('profile-container');
   viewProfile.innerHTML = `
   <div class="profile-content">
-    <div class="profile-background">
-      <div class="profile-information shadow">
-        <div class="cover-page">
-          <img class="cover-photo" src="${dataCurrentUser.photoCover}">
-        </div>
-        <label id="select-cover" for="select-cover-page">
-          <input type="file" id="select-cover-page" class="hide" accept="image/jpeg, image/png">
-          <span class="edit-cover"><i class="fas fa-camera edit-photo-btn"></i></span>
-        </label>
-        <div class="profile-photo">
-          <img class="photo" src="${dataCurrentUser.photo}">
-        </div>
-        <label id="select-profile" for="select-photo-profile">
-          <input type="file" id="select-photo-profile" class="hide" accept="image/jpeg, image/png">
-          <span class="edit-photo"><i class="fas fa-camera edit-photo-btn"></i></span>
-        </label>
-        <div class="user-information">
-        <span class = "edit-info" id="btn-editProfile"><i class="fas fa-edit"><span class="tooltiptext">Edit information</span></i></span>
-          <h2 class="user-name">${dataCurrentUser.username}</p>
-          <h3>About me</h3>
-          <div class="container-grid">
-            <div><i class="fas fa-envelope"></i><span>${dataCurrentUser.email}</span></div>
-            <div><i class="fas fa-birthday-cake"></i><span>${dataCurrentUser.birthday}</span></div>
-            <div><i class="fas fa-mobile-alt"></i><span>${dataCurrentUser.phone}</span></div>
-            <div><i class="fas fa-map-marker-alt"></i><span>${dataCurrentUser.country}</span></div>
-            <div class="item6"><i class="far fa-id-badge"></i><span>${dataCurrentUser.description}</span>
-              <p></p>
-            </div>
+    <div class="profile-information shadow">
+      <div class="cover-page">
+        <img class="cover-photo" src="${dataCurrentUser.photoCover}">
+      </div>
+      <label id="select-cover" for="select-cover-page">
+        <input type="file" id="select-cover-page" class="hide" accept="image/jpeg, image/png">
+        <span class="edit-cover"><i class="fas fa-camera edit-photo-btn"><span class="tooltiptext">Select cover photo</span></i></span>
+      </label>
+      <div class="profile-photo">
+        <img class="photo" src="${dataCurrentUser.photo}">
+      </div>
+      <label id="select-profile" for="select-photo-profile">
+        <input type="file" id="select-photo-profile" class="hide" accept="image/jpeg, image/png">
+        <span class="edit-photo"><i class="fas fa-camera edit-photo-btn"><span class="tooltiptext">Select profile photo</span></i></span>
+      </label>
+      <div class="user-information">
+      <span class = "edit-info" id="btn-editProfile"><i class="fas fa-edit"><span class="tooltiptext">Edit information</span></i></span>
+        <h2 class="user-name">${dataCurrentUser.username}</p>
+        <h3>About me</h3>
+        <div class="container-grid">
+          <div><i class="fas fa-envelope"></i><span>${dataCurrentUser.email}</span></div>
+          <div><i class="fas fa-birthday-cake"></i><span>${dataCurrentUser.birthday}</span></div>
+          <div><i class="fas fa-mobile-alt"></i><span>${dataCurrentUser.phone}</span></div>
+          <div><i class="fas fa-map-marker-alt"></i><span>${dataCurrentUser.country}</span></div>
+          <div class="item6"><i class="far fa-id-badge"></i><span>${dataCurrentUser.description}</span>
+            <p></p>
           </div>
         </div>
       </div>
     </div>
   </div>
   <section class ="container-user-post">
-    <p> You have not posts yet! </p>
+  <p class="no-post">You have not posts yet!</p>
   </section>
   <section class="modal-container">
     <section class="modal-settings">
@@ -104,7 +102,7 @@ export default (dataCurrentUser) => {
       // Handle progress
       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
       modalProgress.classList.add('showModal');
-      messageProgress.textContent = 'The photo change has been updated successfully';
+      messageProgress.textContent = 'Your profile photo is loading... 🛫';
       uploader.value = progress;
     }, () => {
       // Handle unsuccessful uploads
@@ -130,7 +128,7 @@ export default (dataCurrentUser) => {
       // Handle progress
       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
       modalProgress.classList.add('showModal');
-      messageProgress.textContent = 'The photo change has been updated successfully';
+      messageProgress.textContent = 'Your cover photo is loading... 🛫';
       uploader.value = progress;
     }, () => {
       // Handle unsuccessful uploads
@@ -181,11 +179,13 @@ export default (dataCurrentUser) => {
 
   /* ---------------------- ADD POST (CONTAINER-POST)------------------*/
   const containerUserPost = viewProfile.querySelector('.container-user-post');
+  /* const noPost = viewProfile.querySelector('.no-post'); */
   getPosts((post) => {
     containerUserPost.innerHTML = '';
     post.forEach((objPost) => {
       if (userId === objPost.userId) {
         containerUserPost.appendChild(itemPost(objPost));
+        /* containerUserPost.removeChild(noPost); */
       }
     });
   });

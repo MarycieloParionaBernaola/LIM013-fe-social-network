@@ -7,14 +7,14 @@ export const sendDataCurrentUser = (user) => {
     Photo = user.photoURL;
     Name = user.displayName;
   } else {
-    Photo = 'img/travelling.jpg';
+    Photo = 'img/default-avatar.png';
     Name = 'User';
   }
   return db.collection('SN_Users').doc(user.uid).set({
     username: Name,
     email: user.email,
     photo: Photo,
-    photoCover: Photo,
+    photoCover: 'img/default-cover.jpg',
     phone: 'Phone',
     birthday: 'yyyy-MM-dd',
     country: 'Country',
@@ -42,7 +42,7 @@ export const addPost = (UserId, Privacy, Publication, URLimg) => {
   const db = firebase.firestore();
   return db.collection('SN_Post').add({
     userId: UserId,
-    date: new Date().toLocaleString(),
+    date: new Date().toLocaleString('es-ES'),
     privacy: Privacy,
     publication: Publication,
     urlimg: URLimg,
@@ -67,7 +67,7 @@ export const addComment = (UserId, idPost, Comment) => {
   const db = firebase.firestore();
   return db.collection('SN_Post').doc(idPost).collection('SN_Comment').add({
     userId: UserId,
-    date: new Date().toLocaleString(),
+    date: new Date().toLocaleString('es-ES'),
     comment: Comment,
   });
 };

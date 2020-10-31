@@ -7,11 +7,11 @@ export default () => {
   <nav>
     <ul class="menu-header">
       <div id="left-menu-header" class= "box">
-        <li class="home-header"><a href="#/home"><i class="fas fa-home"></i>Home</a></li>
-        <li class="profile-header"><a href="#/profile"><i class="fas fa-user-circle"></i>Profile</a></li>
+        <li class="home-header"><a href="#/home"><i class="fas fa-home"></i><span class="u-home">Home</span></a></li>
+        <li class="profile-header"><a href="#/profile"><i class="fas fa-user-circle"></i><span class="u-profile">Profile</span></a></li>
       </div>
-        <li class="title-header box"><a href="#/home">Travel<i class="fas fa-umbrella-beach"></i>n</a></li>
-        <li id="log-out-header" class="box"><span id ="btn-singOut"><i class="fas fa-sign-out-alt"></i>Log out</span></li>
+      <li class="title-header box"><a href="#/home">Travel<i class="fas fa-umbrella-beach"></i>n</a></li>
+      <li id="log-out-header" class="box"><span id ="btn-singOut"><i class="fas fa-sign-out-alt"></i>Log out</span></li>
     </ul>
   </nav>
   <i id="hamburger-menu" class="fas fa-bars hide"></i>

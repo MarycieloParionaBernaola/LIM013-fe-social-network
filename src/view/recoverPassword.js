@@ -5,13 +5,13 @@ export default () => {
   viewRecoverPass.classList.add('container-recoverPassword');
   viewRecoverPass.innerHTML = `
   <header>
-    <h1 class="title">TravelIn recover password</h1>
-    <p class="text">Enter the email address associated with your account :</p>
+    <h1 class="title">TravelIn Recover Password</h1>
+    <p class="text">Enter the email address associated with your account:</p>
   </header>
   <form id="recoverPass-form">
     <div class="div-input">
     <i class="fas fa-envelope"></i>
-    <input type="email" id="email" placeholder="E-mail" required />
+    <input type="email" id="email" placeholder="E-mail" required autocomplete="off" spellcheck="false" />
     </div>
     <button type="submit" class="btn-recoverPass">Recover Password</button>
     <p id = "error-message"></p>

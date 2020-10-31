@@ -477,7 +477,7 @@ select{
 .fa-github .tooltiptext,
 .fa-edit .tooltiptext,
 .btn-like .tooltiptext,
-.count-like .tooltiptext{
+.count-like .tooltiptext {
     font-size: 12px;
     visibility: hidden;
     background-color:  #444;
@@ -488,7 +488,6 @@ select{
     position: absolute;
     z-index: 1;
     bottom: 130%;
-    /* left: 50%; */
     margin-left: -60px;
   }
   .count-like .tooltiptext{
@@ -516,12 +515,26 @@ select{
 	display: block;
 	object-fit: cover;
   }
+  .fa-camera .tooltiptext {
+    font-size: 12px;
+    visibility: hidden;
+    background-color:  #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    margin-left: -37px;
+  }
   .fa-file-image .tooltiptext::after,
   .fa-github .tooltiptext::after,
   .fa-edit .tooltiptext::after,
   .name .tooltiptext::after,
   .btn-like .tooltiptext::after,
-  .count-like .tooltiptext::after {
+  .count-like .tooltiptext::after,
+  .fa-camera .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -537,7 +550,8 @@ select{
   .fa-edit:hover .tooltiptext,
   .name:hover .tooltiptext,
   .btn-like:hover .tooltiptext,
-  .count-like:hover .tooltiptext {
+  .count-like:hover .tooltiptext,
+  .fa-camera:hover .tooltiptext {
     visibility: visible;
   }
   .tooltiptext .like{

@@ -1,10 +1,13 @@
 /*----------------view profile----------------------*/
 .profile-container {
   width:100%;
+  overflow-x: hidden;
 }
 .profile-content {
   width: 70%;
   margin: 0 auto; 
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.356);
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 .profile-content i {
   font-size: 20px;
@@ -23,8 +26,8 @@
 }
 .edit-cover {
   position: absolute; 
-  right: 1rem; 
-  bottom: 50%; 
+  right: 4%; 
+  bottom: 57%; 
   z-index: 2;   
   outline: none;
   border:none;
@@ -41,6 +44,8 @@
   border-radius: 50%; 
   background-color: white; 
   font-size: 1.40rem;
+  position: relative;
+  cursor: pointer; 
 }
 .cover-photo {
   width: 100%; 
@@ -72,10 +77,9 @@
   width: 100px; 
   position: absolute;
   z-index: 1; 
-  bottom: 43%; 
+  bottom: 47%; 
   left: 53%; 
   background-color: transparent;  
-  cursor: pointer; 
   text-align: center; 
 }
 .user-information {
@@ -84,9 +88,8 @@
   padding: 4.5rem 3rem 3rem 3rem; 
   background-color: white;
   color: #222; 
-  border-radius: 0 0 0.5rem 0.5rem;
-  border: 1px rgba(128, 128, 128, 0.226) solid; 
   position: relative;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 .edit-info {
   margin-top: 1rem; 
@@ -108,9 +111,6 @@
 }
 .container-user-post p{
   margin: 0.5rem 0.5rem;
-}
-#log-out-header{
-  cursor: pointer;
 }
 /* ---------------------view modal settings -------------------------*/
 .modal-container, .modal-progress{

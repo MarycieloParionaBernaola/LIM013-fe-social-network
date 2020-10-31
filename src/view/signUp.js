@@ -5,25 +5,25 @@ export default () => {
   viewSignUp.classList.add('container-signUp');
   viewSignUp.innerHTML = `
 <section class="text-infoSingUp">
-  <p class="text-infoTitle">Why create my account in TravelIn?</p>
-  <p class="text">Because TravelIn will allow you to create bonds and get closer to a great network of travel lovers</p>
+  <p class="text-infoTitle">Why create an account on TravelIn?</p>
+  <p class="text">Because on TravelIn you can connect with people around the world who love to travel just like you!</p>
 </section>
 <section class="section-register">
   <div class="box-section-register">
     <header>
       <h1 class="title">Travel<i class="fab fa-avianex"></i>n</h1>
-      <p class="text">¡Be part of the great family TravelIn!</p>
+      <p class="text">¡Be part of the great TravelIn family!</p>
       <p class="text-title">Sign Up</p>
     </header>
     <form id="signup-form" class="signup-form" >
       <div class="div-input">
         <i class="fas fa-user"></i>
-        <input type="text" id="username" placeholder="Username" required  />
+        <input type="text" id="username" placeholder="Username" required autocomplete="off" spellcheck="false" />
         <span class="tooltiptext">Create a username</span>
       </div>
       <div class="div-input">
       <i class="fas fa-envelope"></i>
-      <input type="email" id="email" placeholder="E-mail" required />
+      <input type="email" id="email" placeholder="E-mail" required autocomplete="off" spellcheck="false" />
       <span class="tooltiptext">Enter a valid email</span>
       </div>
       <div class="div-input">
