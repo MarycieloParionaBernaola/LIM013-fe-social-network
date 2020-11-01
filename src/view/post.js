@@ -35,7 +35,7 @@ export const itemPost = (objPost) => {
             <option class="fa" value="public" ${(objPost.privacy === 'public') ? 'selected' : ''} title = "Public">&#xf57d; </option>
             <option class="fa" value="private" ${(objPost.privacy === 'private') ? 'selected' : ''} title = "Private">&#xf023; </option>
           </select>
-          <p class="time-post">${objPost.date}</p>
+          <time class="time-post">${objPost.date}</time>
         </div>       
         <div class="content-post">
           <p class="text-post">${objPost.publication}</p>

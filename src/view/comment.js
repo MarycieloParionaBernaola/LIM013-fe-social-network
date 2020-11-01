@@ -24,7 +24,7 @@ export const itemComment = (objComment, idPost) => {
           <button type="button" class="btn-cancel-comment">Cancel</button>
         </div>
       </div>
-      <p class="time-comment">${objComment.date}</p>
+      <time class="time-comment">${objComment.date}</time>
     </div>
   </div>
     `;

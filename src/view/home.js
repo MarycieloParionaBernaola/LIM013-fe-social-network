@@ -21,7 +21,7 @@ export default (dataCurrentUser) => {
       <p id="birthday"><i class="fas fa-birthday-cake"></i> ${dataCurrentUser.birthday}</p>
       <a href="#/profile" id="viewall">View All</a>
     </div>
-    <!-- Interest -->
+    <!-- Interests -->
     <div class = "interest">
       <p>Interests</p>
         <p>
@@ -70,12 +70,12 @@ export default (dataCurrentUser) => {
     <!-- Events -->
     <div class="events">
       <p>The World's Most Popular Destinations</p>
-      <img class="img-aside" src="img/aside-bali-indonesia.jpg" title = "indonesia" alt="Indonesia">
-      <img class="img-aside" src="img/aside-cuzco.jpg" title = "cuzco" alt="Cuzco">
-      <img class="img-aside" src="img/aside-islas-caiman.jpg" title = "islas-caiman" alt="Caiman Islands">
-      <img class="img-aside" src="img/aside-nueva-york.jpg" title = "nueva-york" alt="New York">
-      <img class="img-aside" src="img/aside-paris.jpg" title = "paris" alt="Paris">
-      <p class = "img-aside-text"></p>
+      <img class="img-aside" src="img/aside-bali-indonesia.jpg" title = "Indonesia" alt="Indonesia">
+      <img class="img-aside" src="img/aside-cuzco.jpg" title = "Cuzco" alt="Cuzco">
+      <img class="img-aside" src="img/aside-islas-caiman.jpg" title = "Caiman Islands" alt="Caiman Islands">
+      <img class="img-aside" src="img/aside-nueva-york.jpg" title = "New York" alt="New York">
+      <img class="img-aside" src="img/aside-paris.jpg" title = "Paris" alt="Paris">
+      <p class="img-aside-text"></p>
       <a href="https://viajes.nationalgeographic.com.es/a/destinos-mas-populares_11415/1" target="_blank"><button>Info</button></a>
     </div>
     <!-- About us -->

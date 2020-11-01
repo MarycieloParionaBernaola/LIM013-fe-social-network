@@ -54,14 +54,13 @@ main > div,.allpost{
 }
 hr{
     border: 0;
-    border-top: 1px solid rgba(44, 171, 146, 0.3);
+    border-top: 2px solid rgba(44, 171, 146, 0.3);
     margin: 10px 0;
 }
 #viewall{
     color: #2CAB92;
     background-color: transparent;
-    border-color: #2CAB92;
-    border-style: solid;
+    border: 2px solid #2CAB92;
     border-radius: 2rem;
 }
 #viewall:hover{
