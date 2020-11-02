@@ -54,7 +54,7 @@ export default (dataCurrentUser) => {
       </header>
       <form class="editProfile">
         <div class="grupo">
-          <label  for="usernameEdit">User name:</label>
+          <label  for="usernameEdit">Username:</label>
           <input type="text" id="usernameEdit" value="${dataCurrentUser.username}">
         </div>
         <div class="grupo">

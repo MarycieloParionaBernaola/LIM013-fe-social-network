@@ -94,14 +94,14 @@
   border-radius: 0 0 0.5rem 0.5rem;
 }
 .edit-info {
-  margin-top: 1rem; 
+  margin-top: 3rem; 
   cursor: pointer;
   position: absolute;
-  right: 1rem;
+  right: 2rem;
 }
 .user-information h2 {
   text-align: center;
-  font-size: 2rem; 
+  font-size: 1.8rem; 
 }
 .user-information p {
   text-align: left; 
@@ -109,7 +109,6 @@
 .container-user-post {
   width: 50%;
   margin: 2rem auto; 
-  background-color: white;
 }
 .container-user-post p{
   margin: 0.5rem 0.5rem;

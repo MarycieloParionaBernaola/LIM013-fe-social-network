@@ -100,21 +100,6 @@ export default (dataCurrentUser) => {
         </tr>
       </table>
     </div>
-    <!-- Constact us -->
-    <div class="contact" id="contact">
-      <button id="contact-bottom" >Contact us</button>
-      <form >
-        <div>
-        <label for="nombre">Nombre</label><br>
-        <input type="text">
-        </div>
-        <div>
-        <p>Comment</p>
-        <textarea cols="30" rows="10"></textarea>
-        </div>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
   </aside>
   <section class="modal-progress">
     <div class="progress">
@@ -163,11 +148,6 @@ export default (dataCurrentUser) => {
   };
   carousel();
 
-  /* ----------- Ventana Contact us emergente ------------------*/
-  viewHome.querySelector('#contact-bottom').addEventListener('click', () => {
-    viewHome.querySelector('#contact-bottom').classList.toggle('click');
-    viewHome.querySelector('#contact').classList.toggle('viewContact');
-  });
   /* ---------------------- ADD POST (CLOUD FIRESTORE SN-Post)------------------*/
   const formPost = viewHome.querySelector('#form-post');
   formPost.addEventListener('submit', (e) => {

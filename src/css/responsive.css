@@ -150,10 +150,15 @@ header nav ul li {
 }
 
 /*Responsive profile*/
-.container-user-post,
+.container-user-post {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0;
+}
 .profile-content {
   width: 100%;
-  margin: 0 auto; 
+  margin-bottom: 2rem;
+  border-radius: 0;
 }
 /*modal Profile edit*/
 .modal-settings{
@@ -167,24 +172,36 @@ header nav ul li {
     grid-column-start: 1;
     grid-column-end: 2;
   }
+  /* -----------------Responsive home--------------*/
+.container-home{
+  width:100%;
+  grid-template-areas: "profile profile profile"
+                      "home home home"
+                      "aside aside aside";
+}
+.avatar{
+width: 100px;
+margin: 1rem 1rem 1rem 0;
+display: block;
+float: left;
+}
+.interest, .events, #viewall{
+  display: none;
+}
 }
 /* ------------------media query small device-----------------*/
 @media screen and (max-width:576px){
-/* -----------------Responsive home--------------*/
-.container-home{
-    grid-template-areas: "profile profile profile"
-                        "home home home"
-                        "aside aside aside";
-}
-.avatar{
-  width: 100px;
-  margin: 1rem 1rem 1rem 0;
-  display: block;
-  float: left;
-}
-.interest, .events, #viewall{
-    display: none;
-}
+  .user-information {
+    padding: 5rem 2rem 2rem 2rem;
+  }
+  .user-information h2 {
+    margin-bottom: 1rem;
+  }
+  .edit-info {
+    right: 1rem;
+    margin-top: 4rem;
+  }
+
 /*Responsive modal profile*/
 .modal-settings{
     width: 80%;
