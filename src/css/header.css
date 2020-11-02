@@ -76,8 +76,9 @@
 }
 .scrollUp {
   font-size: 2.5rem;
-  color: #444444;
-  background-color: white;
+  color: white;
+  background-color: #2CAB92;
+  border: 2px solid #2CAB92;
   border-radius: 50%;
   position: fixed;
   bottom: 3rem;

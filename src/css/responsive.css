@@ -160,6 +160,9 @@ header nav ul li {
   margin-bottom: 2rem;
   border-radius: 0;
 }
+.post-img {
+  width: 100%;
+}
 /*modal Profile edit*/
 .modal-settings{
     width: 60%;
@@ -175,9 +178,9 @@ header nav ul li {
   /* -----------------Responsive home--------------*/
 .container-home{
   width:100%;
-  grid-template-areas: "profile profile profile"
-                      "home home home"
+  grid-template-areas: "home home home"
                       "aside aside aside";
+  grid-gap: 0px;
 }
 .avatar{
 width: 100px;
@@ -185,7 +188,7 @@ margin: 1rem 1rem 1rem 0;
 display: block;
 float: left;
 }
-.interest, .events, #viewall{
+.interest, .events, .profile{
   display: none;
 }
 }
