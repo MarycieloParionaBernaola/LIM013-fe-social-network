@@ -84,7 +84,7 @@ describe('set new user', () => {
         getDataUser('uid_006')
           .then((doc) => {
             expect(doc.data().username).toEqual('User');
-            expect(doc.data().photo).toEqual('img/travelling.jpg');
+            expect(doc.data().photo).toEqual('img/default-avatar.png');
           });
       });
   });
