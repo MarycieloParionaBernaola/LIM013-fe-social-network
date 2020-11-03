@@ -209,7 +209,7 @@
     height: 45px;
 }
 /*regarding circular layout of the login view*/
-.container-logIn:before  {
+.container-logIn::before  {
     content: "";
     position: absolute;
     height: 2000px;
@@ -231,7 +231,7 @@
     cursor: pointer;
 }
 /******************************Vista de signUp***********************************/
-.container-signUp:before {
+.container-signUp::before {
     content: "";
     position: absolute;
     height: 2000px;
