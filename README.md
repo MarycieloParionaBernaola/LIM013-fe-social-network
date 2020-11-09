@@ -1,5 +1,5 @@
 <p align="center">
-  <a title="Travel-In" target="_blank" href= "https://emae1712.github.io/LIM013-fe-social-network/src/">
+  <a title="Travel-In" target="_blank" href= "https://marycieloparionabernaola.github.io/LIM013-fe-social-network/src/index.html">
     <img  src="https://i.ibb.co/Y2TYb6y/TravelIn.jpg" alt="Travel-In">
   </a>
 </p>
@@ -15,7 +15,6 @@
 * [3. Historias de usuario](#3-historias-de-usuario)
 * [4. Diseño de Interfaz de Usuario](#4-diseño-de-interfaz-de-usuario)
 * [5. Test de usabilidad](#5-Test-de-usabilidad)
-* [6. Objetivos de aprendizaje](#6-Objetivos-de-aprendizaje)
  
 ## 1. 🧐Resumen del proyecto 
 El presente proyecto, **_TRAVEL IN_**, es una Red social destinada a personas interesadas en compartir sus experiencias de viajes, tips, recomendaciones y demás que puedan ser de utilidad para otros amantes de los viajes o que quieran iniciar en esta actividad. Esta red social te permitirá crear una cuenta de acceso y loguearse con ella; crear, editar, borrar, comentar y "likear" publicacciones, todo de forma dinámica.
@@ -83,81 +82,4 @@ Gracias al Feedback recibido por parte de nuestros usuarios, compañeras y coach
 * Se implementó un botón *Scroll up* tanto en la sección de **Home** como **Profile** para que el usuario pueda desplazarse rápidamente hacia la parte superior de la página luego de revisar las diversas publicaciones.
 * Se subrayaron las pestañas de **Home** y **Profile** para que el usuario sepa la sección en la que se encuentra.
 * En la sección **Home** al colocar el puntero del mouse en el nombre de un usuario que ha publicado, aparecerá una ventana emergente con información extra de dicho usuario, datos como país y cumpleaños, así también se apreciará de un mayor tamaño la foto de perfil, ello con la finalidad que los usuarios editen su información en la sección profile.
-* Paleta de colores que vincule a viajes.
-* Diseño interactivo en todas sus presentaciones. 
 
-## 6. Objetivos de aprendizaje
-
-El objetivo principal de aprendizaje de este proyecto es construir una
-[Single-page Application (SPA)](https://es.wikipedia.org/wiki/Single-page_application) que se adapte 
-al patrón modelo - vista - controlador [MVC](https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador)
-y que sea [_responsive_](https://github.com/Laboratoria/curricula-js/tree/master/topics/css/02-responsive)
- (con más de una vista / página) en la que podamos **leer, escribir, actualizar y
- eliminar datos.**
-
-### HTML y CSS
-
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
-* [ ] Uso de [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) | [Grid]('https://css-tricks.com/snippets/css/complete-guide-grid/') en CSS.
-
-### DOM y Web APIs
-
-* [ ] [Uso de selectores del DOM.](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings)
-* [ ] [Manejo de eventos del DOM](https://lms.laboratoria.la/cohorts/lim-2020-07-bc-core-lim013/courses/browser/02-dom/04-events)
-(aprovecha el objeto de evento en sus handlers, uso de event delegacion.)
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
-* [ ] [History API.](https://developer.mozilla.org/es/docs/DOM/Manipulando_el_historial_del_navegador)
-* [ ] [localStorage.](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage)
-
-### JavaScript
-
-* [ ] [Uso de template strings](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings)
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Manipular arrays (filter | map | sort | reduce)
-* [ ] Manipular objects (key | value)
-* [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-| [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] Diferenciar entre expression y statements.
-* [ ] Diferenciar entre tipos de datos atómicos y estructurados.
-* [ ] [Uso de callbacks.](https://developer.mozilla.org/es/docs/Glossary/Callback_function)
-* [ ] [Consumo de Promesas.](https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises)
-
-### Testing
-
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
-* [ ] [Testeo asíncrono.](https://jestjs.io/docs/es-ES/asynchronous)
-* [ ] [Uso de librerias de Mock.](https://jestjs.io/docs/es-ES/manual-mocks)
-
-### Estructura del código y guía de estilo
-
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
-
-### Git y Github
-
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-* [ ] Colaboración en Github (branches | pull requests | code reviews |tags)
-* [ ] Organización en Github (projects | issues | labels | milestones)
-
-### Firebase
-
-* [ ] [Firestore.](https://firebase.google.com/docs/firestore)
-* [ ] [Firebase Auth.](https://firebase.google.com/docs/auth/web/start)
-* [ ] [Firebase security rules.](https://firebase.google.com/docs/rules)
-* [ ] Observadores. ([onAuthStateChanged](https://firebase.google.com/docs/auth/web/manage-users?hl=es#get_the_currently_signed-in_user)
- | [onSnapshot](https://firebase.google.com/docs/firestore/query-data/listen#listen_to_multiple_documents_in_a_collection))
-
-### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [ ] Planear y ejecutar tests de usabilidad.
-
-***
