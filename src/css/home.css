@@ -8,9 +8,6 @@
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas: "profile home aside";
 }
-.container-home p{
-    margin: 0.5rem 0.5rem;
-}
 aside > div,
 main > div,.allpost{
     background-color: white;
@@ -317,19 +314,22 @@ select{
 }
 .comment-text{
     font-size: 0.9rem;
+    margin: 0.5rem 0;
 }
 .time-comment{
     opacity: 0.6;
     font-size: 0.7rem;
-    margin: auto !important;
-    text-align: right;
+    display: flex; 
+    align-self: flex-end;
 }
 .comment-container{
     width: 100%;
     background-color: rgba(44, 171, 146, 0.15);
     border-radius: 0.5em;
-    padding: 0 0.8rem;
-    margin-left: 0.8rem;
+    padding: 0.8rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-flow: column nowrap;
     box-sizing: border-box;
 }
 .logo-aside i{

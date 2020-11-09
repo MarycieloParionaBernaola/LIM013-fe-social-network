@@ -81,8 +81,8 @@ export default (dataCurrentUser) => {
     <!-- About us -->
     <div class="aboutUs">
       <ul>
-        <li><a href="https://consuelogoche-1994.github.io/LIM013-fe-social-network/" target="_blank">About</a></li>
-        <li><a href="https://consuelogoche-1994.github.io/LIM013-fe-social-network/" target="_blank">Privacy and Policy</a></li>
+        <li><a href="https://github.com/MarycieloParionaBernaola/TravelIn-SocialNetwork" target="_blank">About</a></li>
+        <li><a href="https://github.com/MarycieloParionaBernaola/TravelIn-SocialNetwork" target="_blank">Privacy and Policy</a></li>
         <li><a href="https://n9.cl/zwen0" target="_blank">Help</a></li>
       </ul>
       <p class="logo-aside">Travel <i class="fab fa-avianex"></i>n</p>

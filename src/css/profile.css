@@ -2,6 +2,7 @@
 .profile-container {
   width:100%;
   overflow-x: hidden;
+  background-color: whitesmoke;
 }
 .profile-content {
   width: 70%;
