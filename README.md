@@ -1,5 +1,5 @@
 <p align="center">
-  <a title="Travel-In" target="_blank" href= "https://marycieloparionabernaola.github.io/LIM013-fe-social-network/src/index.html">
+  <a title="Travel-In" target="_blank" href= "https://marycieloparionabernaola.github.io/TravelIn-SocialNetwork/src/index.html">
     <img  src="https://i.ibb.co/Y2TYb6y/TravelIn.jpg" alt="Travel-In">
   </a>
 </p>
