@@ -178,6 +178,7 @@ header nav ul li {
   /* -----------------Responsive home--------------*/
 .container-home{
   width:100%;
+  padding: 0;
   grid-template-areas: "home home home"
                       "aside aside aside";
   grid-gap: 0px;
